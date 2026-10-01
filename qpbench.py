@@ -499,10 +499,9 @@ class QuaproSolver(QPSolver):
     name = "quapro"
     pip_hint = "compiler le cœur quapro en libquapro.so (build local)"
 
-    _CANDIDATE_LIBS = ("libquapro.so")
-    # répertoires (relatifs au dossier du script) où chercher le cœur,
+    _CANDIDATE_LIBS = ("libquapro.so", "libquapro.dylib")    # répertoires (relatifs au dossier du script) où chercher le cœur,
     # dans l'ordre : à côté du script, puis build local du projet quapro.
-    _CANDIDATE_DIRS = (".")
+    _CANDIDATE_DIRS = (".", "../quapro/lib/dyn")
 
     BIG = 1.0e30          # convention Scilab pour une borne infinie
     # BLAS/LAPACK que le cœur peut laisser non résolues (ex. dnrm2_) si la
