@@ -203,7 +203,7 @@ def self_test() -> None:
 def parse_args():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--sizes", default="10,20,50,100,200,300,500",
+    ap.add_argument("--sizes", default="10,20,50,100,200,300,500, 750, 1000",
                     help="tailles n, séparées par des virgules (déf. 10,20,50,100)")
     ap.add_argument("--m-ratio", type=float, default=2.0,
                     help="nombre de contraintes m = ratio * n (déf. 2)")

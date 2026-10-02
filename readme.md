@@ -14,7 +14,7 @@ s.c.  A x >= b          G symétrique définie positive
 ```
 
 
-![image](results/benchmark0.png)
+![image](results/benchmark1000.png)
 
 ## Solveurs comparés
 
