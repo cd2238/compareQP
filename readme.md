@@ -20,7 +20,7 @@ s.c.  A x >= b          G symétrique définie positive
 
 | Nom | Bibliothèque | Famille d'algorithmes | Convention native → conversion |
 |---|---|---|---|
-| `ipquadprog` | [IPQuadProg](https://github.com/cd2238/IPQuadProg) (Fortran) | points intérieurs primal-dual (Mehrotra) | `Ax ≥ b` → aucune |
+| `ipquadprog` | [IPQuadProg](https://github.com/cd2238/IPQuadProg) (Fortran, fait maison) | points intérieurs primal-dual (Mehrotra) | `Ax ≥ b` → aucune |
 | `quadprog` | [quadprog](https://github.com/quadprog/quadprog) (pip) | dual ensemble actif (Goldfarb-Idnani) | `min ½x'Gx − a'x`, `Cᵀx ≥ b` → `a = −c`, `C = Aᵀ` |
 | `cvxopt` | [CVXOPT](https://cvxopt.org/) | points intérieurs | `Gx ≤ h` → `G = −A`, `h = −b` |
 | `osqp` | [OSQP](https://osqp.org/) | ADMM (1er ordre) | `l ≤ Mx ≤ u` → `l = b`, `u = +∞` |
