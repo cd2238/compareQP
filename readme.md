@@ -49,7 +49,7 @@ uv add numpy scipy pandas matplotlib quadprog cvxopt osqp clarabel
 
 
 
-## 1. Compiler IPQuadProg
+## 1. Lancer IPQuadProg
 
 ```bash
 uv run build_ipquadprog.py                # clone le dépôt, compile en .so
